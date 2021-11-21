@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <Upcoming/> component should match snapshot of Upcoming at initial state 1`] = `
+"<Fragment>
+  <Accordion defaultActiveKey=\\"0\\">
+    <Card bg=\\"primary\\" text=\\"light\\" className=\\"mb-2\\" body={false}>
+      <CardHeader>
+        Reminder-1
+        <Button id=\\"complete-1\\" className=\\"float-end\\" variant=\\"primary\\" onClick={[Function: onClick]} active={false} disabled={false}>
+          <CheckCircle />
+        </Button>
+        <AccordionToggle eventKey={0} />
+      </CardHeader>
+      <AccordionCollapse eventKey={0}>
+        <CardBody>
+          <CardText>
+            Reminder-desc-1
+          </CardText>
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+  </Accordion>
+  <Accordion defaultActiveKey=\\"0\\">
+    <Card bg=\\"warning\\" text=\\"dark\\" className=\\"mb-2\\" body={false}>
+      <CardHeader>
+        Reminder-2
+        <Button id=\\"complete-2\\" className=\\"float-end\\" variant=\\"warning\\" onClick={[Function: onClick]} active={false} disabled={false}>
+          <CheckCircle />
+        </Button>
+        <AccordionToggle eventKey={1} />
+      </CardHeader>
+      <AccordionCollapse eventKey={1}>
+        <CardBody>
+          <CardText>
+            Reminder-desc-2
+          </CardText>
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+  </Accordion>
+  <Accordion defaultActiveKey=\\"0\\">
+    <Card bg=\\"danger\\" text=\\"light\\" className=\\"mb-2\\" body={false}>
+      <CardHeader>
+        Reminder-3
+        <Button id=\\"complete-3\\" className=\\"float-end\\" variant=\\"danger\\" onClick={[Function: onClick]} active={false} disabled={false}>
+          <CheckCircle />
+        </Button>
+        <AccordionToggle eventKey={2} />
+      </CardHeader>
+      <AccordionCollapse eventKey={2}>
+        <CardBody>
+          <CardText>
+            Reminder-desc-3
+          </CardText>
+        </CardBody>
+      </AccordionCollapse>
+    </Card>
+  </Accordion>
+</Fragment>"
+`;

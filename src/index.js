@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Container } from 'react-bootstrap';
+import Upcoming from './components/Upcoming';
+
+const reminders = [{
+  name: 'Reminder-1',
+  description: 'Reminder-desc-1',
+  state: 'created'
+}, {
+  name: 'Reminder-2',
+  description: 'Reminder-desc-1',
+  state: 'created'
+}]
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Container>
+      <Upcoming reminders={reminders}/>
+    </Container>
   </React.StrictMode>,
   document.getElementById('root')
 );
