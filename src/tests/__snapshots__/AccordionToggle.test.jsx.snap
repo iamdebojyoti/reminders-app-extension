@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing <AccordionToggle/> component should match snapshot of AccordionToggle 1`] = `
+"<Button id=\\"acrdn-1\\" className=\\"float-end\\" variant=\\"success\\" onClick={[Function (anonymous)]} active={false} disabled={false}>
+  <CaretDown />
+</Button>"
+`;

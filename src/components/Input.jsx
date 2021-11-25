@@ -39,28 +39,26 @@ class Input extends Component {
     return (
       <>
         <Form>
-          <Form.Group as={Row} className="mb-3" controlId="reminderNameGrp">
+          <Form.Group as={Row} className="mb-3" >
             <Col sm="12">
               <Form.Control
                 id="reminderName"
+                value={this.state.name}
                 type="text"
                 placeholder="Reminder Name"
-                onChange={(val) => {
-                  this.setState({ name: val });
-                }}
+                onChange={e => this.setState({ name: e.target.value })}
               />
             </Col>
           </Form.Group>
 
-          <Form.Group as={Row} className="mb-3" controlId="reminderDescGrp">
+          <Form.Group as={Row} className="mb-3" >
             <Col sm="12">
               <Form.Control
                 id="reminderDesc"
+                value={this.state.description}
                 as="textarea"
                 placeholder="Description"
-                onChange={(val) => {
-                  this.setState({ description: val });
-                }}
+                onChange={e => this.setState({ description: e.target.value })}
               />
             </Col>
           </Form.Group>

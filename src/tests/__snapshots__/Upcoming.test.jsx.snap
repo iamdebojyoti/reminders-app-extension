@@ -3,13 +3,13 @@
 exports[`Testing <Upcoming/> component should match snapshot of Upcoming at initial state 1`] = `
 "<Fragment>
   <Accordion defaultActiveKey=\\"0\\">
-    <Card bg=\\"primary\\" text=\\"light\\" className=\\"mb-2\\" body={false}>
+    <Card bg=\\"light\\" text=\\"dark\\" className=\\"mb-2\\" body={false}>
       <CardHeader>
         Reminder-1
-        <Button id=\\"complete-1\\" className=\\"float-end\\" variant=\\"primary\\" onClick={[Function: onClick]} active={false} disabled={false}>
+        <Button id=\\"complete-1\\" className=\\"float-end\\" variant=\\"light\\" onClick={[Function: onClick]} active={false} disabled={false}>
           <CheckCircle />
         </Button>
-        <AccordionToggle eventKey={0} />
+        <AccordionToggle eventKey={0} variant=\\"light\\" />
       </CardHeader>
       <AccordionCollapse eventKey={0}>
         <CardBody>
@@ -21,13 +21,13 @@ exports[`Testing <Upcoming/> component should match snapshot of Upcoming at init
     </Card>
   </Accordion>
   <Accordion defaultActiveKey=\\"0\\">
-    <Card bg=\\"warning\\" text=\\"dark\\" className=\\"mb-2\\" body={false}>
+    <Card bg=\\"dark\\" text=\\"light\\" className=\\"mb-2\\" body={false}>
       <CardHeader>
         Reminder-2
-        <Button id=\\"complete-2\\" className=\\"float-end\\" variant=\\"warning\\" onClick={[Function: onClick]} active={false} disabled={false}>
+        <Button id=\\"complete-2\\" className=\\"float-end\\" variant=\\"dark\\" onClick={[Function: onClick]} active={false} disabled={false}>
           <CheckCircle />
         </Button>
-        <AccordionToggle eventKey={1} />
+        <AccordionToggle eventKey={1} variant=\\"dark\\" />
       </CardHeader>
       <AccordionCollapse eventKey={1}>
         <CardBody>
@@ -39,13 +39,13 @@ exports[`Testing <Upcoming/> component should match snapshot of Upcoming at init
     </Card>
   </Accordion>
   <Accordion defaultActiveKey=\\"0\\">
-    <Card bg=\\"danger\\" text=\\"light\\" className=\\"mb-2\\" body={false}>
+    <Card bg=\\"light\\" text=\\"dark\\" className=\\"mb-2\\" body={false}>
       <CardHeader>
         Reminder-3
-        <Button id=\\"complete-3\\" className=\\"float-end\\" variant=\\"danger\\" onClick={[Function: onClick]} active={false} disabled={false}>
+        <Button id=\\"complete-3\\" className=\\"float-end\\" variant=\\"light\\" onClick={[Function: onClick]} active={false} disabled={false}>
           <CheckCircle />
         </Button>
-        <AccordionToggle eventKey={2} />
+        <AccordionToggle eventKey={2} variant=\\"light\\" />
       </CardHeader>
       <AccordionCollapse eventKey={2}>
         <CardBody>

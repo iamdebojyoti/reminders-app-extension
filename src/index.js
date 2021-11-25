@@ -4,22 +4,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { Container } from 'react-bootstrap';
-import Upcoming from './components/Upcoming';
-
-const reminders = [{
-  name: 'Reminder-1',
-  description: 'Reminder-desc-1',
-  state: 'created'
-}, {
-  name: 'Reminder-2',
-  description: 'Reminder-desc-1',
-  state: 'created'
-}]
+import Reminders from './components/Reminders';
 
 ReactDOM.render(
   <React.StrictMode>
     <Container>
-      <Upcoming reminders={reminders}/>
+      <Reminders/>
     </Container>
   </React.StrictMode>,
   document.getElementById('root')

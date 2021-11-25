@@ -9,7 +9,7 @@ exports[`Testing <Done/> component should match snapshot of Done at initial stat
         <Button id=\\"remove-1\\" className=\\"float-end\\" variant=\\"success\\" onClick={[Function: onClick]} active={false} disabled={false}>
           <Trash />
         </Button>
-        <AccordionToggle eventKey={0} />
+        <AccordionToggle eventKey={0} variant=\\"success\\" />
       </CardHeader>
       <AccordionCollapse eventKey={0}>
         <CardBody>
@@ -27,7 +27,7 @@ exports[`Testing <Done/> component should match snapshot of Done at initial stat
         <Button id=\\"remove-2\\" className=\\"float-end\\" variant=\\"success\\" onClick={[Function: onClick]} active={false} disabled={false}>
           <Trash />
         </Button>
-        <AccordionToggle eventKey={1} />
+        <AccordionToggle eventKey={1} variant=\\"success\\" />
       </CardHeader>
       <AccordionCollapse eventKey={1}>
         <CardBody>

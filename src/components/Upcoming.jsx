@@ -6,18 +6,18 @@ import AccordionToggle from "./AccordionToggle";
 const Upcoming = ({reminders, complete}) => {
 
   const backgroundVariant = (idx) => {
-    switch (idx % 3) {
-      case 0: return "primary"
-      case 1: return "warning"
-      default: return "danger"
+    if(idx % 2 == 0) {
+      return "light"
+    } else {
+      return "dark"
     }
   };
 
   const textVariant = (idx) => {
-    switch (idx % 3) {
-      case 0: return "light"
-      case 1: return "dark"
-      default: return "light"
+    if(idx % 2 == 0) {
+      return "dark"
+    } else {
+      return "light"
     }
   };
 
@@ -25,7 +25,7 @@ const Upcoming = ({reminders, complete}) => {
     <>
       {reminders.map((reminder, idx) => {
         return (
-          <Accordion defaultActiveKey="0">
+          <Accordion defaultActiveKey="0" key={idx}>
             <Card
               bg={backgroundVariant(idx)}
               key={idx}
@@ -42,7 +42,7 @@ const Upcoming = ({reminders, complete}) => {
                 >
                   <CheckCircle />
                 </Button>
-                <AccordionToggle eventKey={idx} />
+                <AccordionToggle eventKey={idx} variant={backgroundVariant(idx)}/>
               </Card.Header>
               <Accordion.Collapse eventKey={idx}>
                 <Card.Body>

@@ -1,36 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tesing <Reminders/> component should match snapshot of Reminders 1`] = `
-"<Card body={false}>
-  <CardHeader>
-    <Nav variant=\\"tabs\\" defaultActiveKey=\\"#first\\" justify={false} fill={false}>
-      <NavItem>
-        <NavLink href=\\"#first\\" disabled={false}>
-          Active
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink href=\\"#link\\" disabled={false}>
-          Link
-        </NavLink>
-      </NavItem>
-      <NavItem>
-        <NavLink href=\\"#disabled\\" disabled={true}>
-          Disabled
-        </NavLink>
-      </NavItem>
-    </Nav>
-  </CardHeader>
-  <CardBody>
-    <CardTitle>
-      Special title treatment
-    </CardTitle>
-    <CardText>
-      With supporting text below as a natural lead-in to additional content.
-    </CardText>
-    <Button variant=\\"primary\\" active={false} disabled={false}>
-      Go somewhere
-    </Button>
-  </CardBody>
-</Card>"
+exports[`Testing <Reminders/> component should match snapshot of Reminders 1`] = `
+"<Tabs defaultActiveKey=\\"input\\" id=\\"uncontrolled-tab-example\\" className=\\"mb-3\\" variant=\\"tabs\\" mountOnEnter={false} unmountOnExit={false}>
+  <Tab eventKey=\\"input\\" title=\\"Input\\">
+    <Input addReminder={[Function: bound addReminder]} />
+  </Tab>
+  <Tab eventKey=\\"upcoming\\" title=\\"Upcoming\\">
+    <Upcoming reminders={{...}} complete={[Function: bound complete]} />
+  </Tab>
+  <Tab eventKey=\\"done\\" title=\\"Done\\">
+    <Done reminders={{...}} remove={[Function: bound remove]} />
+  </Tab>
+</Tabs>"
 `;

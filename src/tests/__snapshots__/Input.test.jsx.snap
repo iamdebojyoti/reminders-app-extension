@@ -3,14 +3,14 @@
 exports[`Testing <Input/> component should match snapshot of Input after submit is clicked when inputs are provided 1`] = `
 "<Fragment>
   <Form>
-    <FormGroup as={{...}} className=\\"mb-3\\" controlId=\\"reminderNameGrp\\">
+    <FormGroup as={{...}} className=\\"mb-3\\">
       <Col sm=\\"12\\">
-        <FormControl id=\\"reminderName\\" type=\\"text\\" placeholder=\\"Reminder Name\\" onChange={[Function: onChange]} />
+        <FormControl id=\\"reminderName\\" value=\\"\\" type=\\"text\\" placeholder=\\"Reminder Name\\" onChange={[Function: onChange]} />
       </Col>
     </FormGroup>
-    <FormGroup as={{...}} className=\\"mb-3\\" controlId=\\"reminderDescGrp\\">
+    <FormGroup as={{...}} className=\\"mb-3\\">
       <Col sm=\\"12\\">
-        <FormControl id=\\"reminderDesc\\" as=\\"textarea\\" placeholder=\\"Description\\" onChange={[Function: onChange]} />
+        <FormControl id=\\"reminderDesc\\" value=\\"\\" as=\\"textarea\\" placeholder=\\"Description\\" onChange={[Function: onChange]} />
       </Col>
     </FormGroup>
     <Col sm=\\"12\\">
@@ -25,14 +25,14 @@ exports[`Testing <Input/> component should match snapshot of Input after submit 
 exports[`Testing <Input/> component should match snapshot of Input at initial state 1`] = `
 "<Fragment>
   <Form>
-    <FormGroup as={{...}} className=\\"mb-3\\" controlId=\\"reminderNameGrp\\">
+    <FormGroup as={{...}} className=\\"mb-3\\">
       <Col sm=\\"12\\">
-        <FormControl id=\\"reminderName\\" type=\\"text\\" placeholder=\\"Reminder Name\\" onChange={[Function: onChange]} />
+        <FormControl id=\\"reminderName\\" value=\\"\\" type=\\"text\\" placeholder=\\"Reminder Name\\" onChange={[Function: onChange]} />
       </Col>
     </FormGroup>
-    <FormGroup as={{...}} className=\\"mb-3\\" controlId=\\"reminderDescGrp\\">
+    <FormGroup as={{...}} className=\\"mb-3\\">
       <Col sm=\\"12\\">
-        <FormControl id=\\"reminderDesc\\" as=\\"textarea\\" placeholder=\\"Description\\" onChange={[Function: onChange]} />
+        <FormControl id=\\"reminderDesc\\" value=\\"\\" as=\\"textarea\\" placeholder=\\"Description\\" onChange={[Function: onChange]} />
       </Col>
     </FormGroup>
     <Col sm=\\"12\\">
@@ -47,14 +47,14 @@ exports[`Testing <Input/> component should match snapshot of Input at initial st
 exports[`Testing <Input/> component should match snapshot of Input when submit is clicked and no inputs are provided 1`] = `
 "<Fragment>
   <Form>
-    <FormGroup as={{...}} className=\\"mb-3\\" controlId=\\"reminderNameGrp\\">
+    <FormGroup as={{...}} className=\\"mb-3\\">
       <Col sm=\\"12\\">
-        <FormControl id=\\"reminderName\\" type=\\"text\\" placeholder=\\"Reminder Name\\" onChange={[Function: onChange]} />
+        <FormControl id=\\"reminderName\\" value=\\"\\" type=\\"text\\" placeholder=\\"Reminder Name\\" onChange={[Function: onChange]} />
       </Col>
     </FormGroup>
-    <FormGroup as={{...}} className=\\"mb-3\\" controlId=\\"reminderDescGrp\\">
+    <FormGroup as={{...}} className=\\"mb-3\\">
       <Col sm=\\"12\\">
-        <FormControl id=\\"reminderDesc\\" as=\\"textarea\\" placeholder=\\"Description\\" onChange={[Function: onChange]} />
+        <FormControl id=\\"reminderDesc\\" value=\\"\\" as=\\"textarea\\" placeholder=\\"Description\\" onChange={[Function: onChange]} />
       </Col>
     </FormGroup>
     <Col sm=\\"12\\">

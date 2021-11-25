@@ -25,8 +25,8 @@ describe('Testing <Input/> component', () => {
 
     it('should match snapshot of Input after submit is clicked when inputs are provided', () => {
         component = shallow(<Input {...props}/>);
-        component.find('#reminderName').simulate('change', 'Reminder 1');
-        component.find('#reminderDesc').simulate('change', 'Reminder 1 Desc');
+        component.find('#reminderName').simulate('change', {target:{value:'Reminder 1'}});
+        component.find('#reminderDesc').simulate('change', {target:{value:'Reminder 1 Desc'}});
         component.find('Button').simulate('click');
         component.update();
         expect(component.debug()).toMatchSnapshot();
@@ -34,8 +34,8 @@ describe('Testing <Input/> component', () => {
 
     it('should be able to add reminder when inputs are provided', () => {
         component = shallow(<Input {...props}/>);
-        component.find('#reminderName').simulate('change', 'Reminder 1');
-        component.find('#reminderDesc').simulate('change', 'Reminder 1 Desc');
+        component.find('#reminderName').simulate('change', {target:{value:'Reminder 1'}});
+        component.find('#reminderDesc').simulate('change', {target:{value:'Reminder 1 Desc'}});
         component.find('Button').simulate('click');
         component.update();
         expect(props.addReminder).toHaveBeenCalledWith({

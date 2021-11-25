@@ -8,7 +8,7 @@ const Done = ({reminders, remove}) => {
     <>
       {reminders.map((reminder, idx) => {
         return (
-          <Accordion defaultActiveKey="0">
+          <Accordion defaultActiveKey="0" key={idx}>
             <Card
               bg={"success"}
               key={idx}
@@ -25,7 +25,7 @@ const Done = ({reminders, remove}) => {
                 >
                   <Trash />
                 </Button>
-                <AccordionToggle eventKey={idx} />
+                <AccordionToggle eventKey={idx} variant="success"/>
               </Card.Header>
               <Accordion.Collapse eventKey={idx}>
                 <Card.Body>
