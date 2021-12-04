@@ -6,7 +6,7 @@ import AccordionToggle from "./AccordionToggle";
 const Upcoming = ({reminders, complete}) => {
 
   const backgroundVariant = (idx) => {
-    if(idx % 2 == 0) {
+    if(idx % 2 === 0) {
       return "light"
     } else {
       return "dark"
@@ -14,7 +14,7 @@ const Upcoming = ({reminders, complete}) => {
   };
 
   const textVariant = (idx) => {
-    if(idx % 2 == 0) {
+    if(idx % 2 === 0) {
       return "dark"
     } else {
       return "light"
